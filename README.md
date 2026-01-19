@@ -50,9 +50,9 @@ This portfolio represents my journey, skills, and projects.
 
 ## 📸 Portfolio Preview
 
-![Portfolio Preview](photo.jpeg)
+![Portfolio Preview](Screenshot (19).png)
 
-> You can replace this image later with a full website screenshot.
+
 
 ---
 
