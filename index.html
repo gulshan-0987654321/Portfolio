@@ -36,33 +36,44 @@
       header h1 { font-size: 2rem; }
       section { padding: 3rem 1rem; }
     }
-  </style>
+  .navbar{position:fixed;top:0;width:100%;background:rgba(2,6,23,0.85);backdrop-filter:blur(10px);z-index:1000;}
+.nav-container{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem;}
+.logo{font-size:1.4rem;font-weight:700;color:#38bdf8;}
+.logo span{color:#e5e7eb;}
+.nav-links{list-style:none;display:flex;gap:1.5rem;}
+.nav-links a{color:#e5e7eb;font-weight:500;transition:0.3s;}
+.nav-links a:hover{color:#38bdf8;}
+.nav-links .btn{padding:0.4rem 0.9rem;border:1px solid #38bdf8;border-radius:20px;}
+.nav-links .btn:hover{background:#38bdf8;color:#020617;}
+</style>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav style="position:fixed;top:0;left:0;width:100%;background:#020617;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,0.4);">
-    <div style="max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem;">
-      <span style="font-weight:600;font-size:1.1rem;color:#38bdf8;">Gulshan.dev</span>
-      <div>
-        <a href="#about" style="margin:0 12px;">About</a>
-        <a href="#skills" style="margin:0 12px;">Skills</a>
-        <a href="#projects" style="margin:0 12px;">Projects</a>
-        <a href="#contact" style="margin:0 12px;">Contact</a>
-      </div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Gulshan<span>.dev</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
 
   <!-- HEADER -->
-  <header style="padding-top:6rem;">
+  <header style="padding-top:7rem;">
     <img src="photo.jpeg" alt="Gulshan Kumar Singh" style="width:160px;height:160px;border-radius:50%;object-fit:cover;border:4px solid #38bdf8;box-shadow:0 10px 25px rgba(0,0,0,0.4);margin-bottom:1rem;" />
     <h1>Gulshan Kumar Singh</h1>
     <p>Full Stack Developer | Cloud & AI Enthusiast</p>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -113,6 +124,35 @@
           <li>Docker, Render, Vercel</li>
           <li>GitHub Actions (CI/CD)</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p><strong>Computer Science & Engineering</strong></p>
+        <p>Lloyd Institute of Engineering and Technology, Greater Noida</p>
+        <p>2023 – 2027</p>
+        <p><strong>CGPA:</strong> 6.9 / 10</p>
+        <p><strong>Relevant Coursework:</strong></p>
+        <ul>
+          <li>Data Structures & Algorithms</li>
+          <li>Database Management Systems</li>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Senior Secondary (12th Grade)</h3>
+        <p>JPKI College of Competence, Bhandaro, Giridih</p>
+        <p>Jharkhand Board</p>
+        <p>2022</p>
+        <p><strong>Score:</strong> 87%</p>
       </div>
     </div>
   </section>
